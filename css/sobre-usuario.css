@@ -60,3 +60,12 @@
 .card ul {
   justify-content: center;
 }
+
+.btn {
+  border: none;
+}
+
+.btn-carrossel {
+  display: flex;
+  justify-content: center;
+}
