@@ -1,16 +1,11 @@
 * {
   text-decoration: none;
   list-style: none;
+  font-family: 'Caudex', serif;
 }
 
 .primeiraDiv {
   margin-top: 150px;
-}
-
-.segundaDiv {
-  height: auto;
-  width: 100%;
-  background-color: rgb(0,0,0,.3);
 }
 
 .sec1 {
@@ -31,13 +26,42 @@
   max-width: 465px;
 }
 
+.segundaDiv {
+  width: 100%;
+}
+
 .sec2 {
-  min-height: 250px;
-  max-height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
+  padding: 25px;
+}
+
+.listaBeneficios > li {
+  list-style: circle;
+}
+
+.sec3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.sec3Img {
+  margin: 35px;
+}
+
+.sec3Textos p {
+  margin-top: 25px;
+}
+
+.sec3Textos li {
+  line-height: 20px;
+  padding: 5px;
 }
 
 .precos {
@@ -52,20 +76,47 @@
   text-align: center;
 }
 
-/* .cardPreco {
-  margin-top: 30px;
-  margin-bottom: 35px;
-} */
-
-.card ul {
+.cardPreco {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
   justify-content: center;
+  align-items: flex-end;
+  align-content: center;
 }
 
+
 .btn {
-  border: none;
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 180px;
+  height: 64px;
+  border-radius: 20px;
+  border: 2px solid rgb(83, 109, 254);
+  color: #536DFE;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  color: #536DFE;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
 }
 
 .btn-carrossel {
   display: flex;
   justify-content: center;
 }
+
+.beneficios p{
+  margin-bottom: .25rem;
+}
+
+.tituloCard {
+  border: 2x solid ;
+}
+
+.menuLink:hover {
+  color: #536DFE;
+}
+
