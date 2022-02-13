@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="../css/cadastro.css">
   <script src="../js/jquery/jquery.min.js" defer></script>
   <script src="../js/bootstrap/bootstrap.min.js" defer></script>
-  <script src="../js/script.js" defer></script>
+  <script src="../js/verificaEmail.js" defer></script>
+  <script src="../js/pegaCep.js" defer></script>
 </head>
 
 <body>
@@ -57,63 +58,74 @@
     <div class="main-cadastro">
       <form>
         <div class="form-row">
-           <div class="row">
-              <div class="col">
-                <label for="Name">Nome</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Nome">
-              </div>
-              <div class="col">
-                <label for="Sobrenome">Sobrenome</label>
-                <input type="text" class="form-control" placeholder="Sobrenome">
-              </div>
+          <div class="row">
+            <div class="col">
+              <label for="Name">Nome</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
             </div>
-          
+            <div class="col">
+              <label for="Sobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="Sobrenome" placeholder="Sobrenome" required>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">Senha</label>
             <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Confirmação de senha</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmação de senha">
+            <label for="inputPassword">Confirmação de senha</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Confirmação de senha">
           </div>
         </div>
         <div class="form-group col-md-2">
-          <label for="inputCEP">RG</label>
+          <label for="inputRG">RG</label>
           <input type="text" class="form-control" id="inputRG" placeholder="xx.xxx.xxx-xx">
         </div>
-        <div class="form-group col-md-2">
-          <label for="inputCEP">CEP</label>
-          <input type="text" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
+        <label for="inputCEP">CEP</label>
+        <div class="form-group buscaCep">
+          <input type="number" maxlength="6" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
+          <button class="botaoBusca" type="button">Busca CEP</button>
         </div>
+
         <div class="form-group">
-          <label for="inputAddress2">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos ">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control inputAddress inputEnable" id="inputAddress" placeholder="Rua dos Bobos"
+            disabled>
+
         </div>
         <div class="form-goupr col-md-2">
           <label for="inputAddress2">Numero </label>
-          <input type="number" class="form-control" id="inputnumero" placeholder="123" >
+          <input type="number" class="form-control inputEnable" id="inputnumero" placeholder="123" disabled>
         </div>
         <div class="form-group">
           <label for="inputAddress2">Bairro</label>
-          <input type="text" class="form-control" id="inputbairro" placeholder="Jardim , Parque etc...">
+          <input type="text" class="form-control inputEnable" id="inputbairro" placeholder="Jardim , Parque etc..."
+            disabled>
         </div>
-       
+
         <div class="form-group">
           <label for="inputAddress2">Complemento</label>
-          <input type="number" class="form-control" id="inputcomplemento" placeholder="Bloco , Apartamento" >
+          <input type="number" class="form-control inputEnable" id="inputcomplemento" placeholder="Bloco , Apartamento"
+            disabled>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="São paulo, Curitiba , Rio de janeiro">
+            <input type="text" class="form-control inputEnable" id="inputCity"
+              placeholder="São paulo, Curitiba , Rio de janeiro" disabled>
           </div>
           <div class="form-group col-md-4">
             <label for="inputEstado">Estado</label>
-            <select id="inputEstado" class="form-control">
+            <select id="inputEstado" class="form-control inputEnable" disabled>
               <option selected>Escolher...</option>
               <option value="AC">Acre</option>
               <option value="AL">Alagoas</option>
@@ -145,7 +157,7 @@
               <option value="EX">Estrangeiro</option>
             </select>
           </div>
-         
+
         </div>
         <div class="form-group">
           <div class="form-check">
@@ -155,14 +167,16 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
+            <input class="form-check-input" type="checkbox" id="gridCheck2">
+            <label class="form-check-label" for="gridCheck2">
               Li e concordo com os termos de uso
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="submit" class="btn btn-primary" id="btnCadastro">Cadastrar</button>
+        <a href="login.html">Já tenho cadastro</a>
       </form>
+
     </div>
   </main>
   <footer>
@@ -194,7 +208,7 @@
         <div class="text-center text-white p-3">
           © 2022 Todos os direitos reservados
           <a class="text-white" href="https://mdbootstrap.com/"></a>
-       
+
         </div>
         <!-- Copyright -->
       </footer>

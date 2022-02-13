@@ -52,6 +52,45 @@
   }
   
   
-  #inputRG{
-    width: 200px;
-  }
+#inputRG{
+  width: 200px;
+}
+
+#inputCEP {
+  width: 120px;
+}
+
+.buscaCep {
+  display: flex;
+}
+
+.botaoBusca {
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid rgb(83, 109, 254);
+  color: #536DFE;
+  background-color: rgb(255, 255, 255);
+}
+
+.botaoBusca:hover {
+  background-color: #536DFE;
+  color: #ffffff;
+}
+
+.btn {
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 44px;
+  border-radius: 20px;
+  border: 2px solid rgb(83, 109, 254);
+  color: #536DFE;
+  background-color: rgb(255, 255, 255);
+}
+
+#inputCEP {
+  border-radius: 5px 0 0 5px;
+}
