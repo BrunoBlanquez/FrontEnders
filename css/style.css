@@ -23,27 +23,6 @@
 
 /* início CSS HUGO */
 
-.main-inicial{
-display: flex;
-flex-direction: column;
-width: 100vw;
-align-items: center;
-justify-content: space-around;
-margin: auto;
-}
-
-
-.conteudo-principal{
-height: 30vw;
-width: 100%;
-margin: auto;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-around;
-}
-
 .botao-conteudo-principal {
 margin: 20px auto;
 background-color: #6C63FF;
@@ -52,13 +31,25 @@ border-radius:50px;
 padding: 10px 44px;
 font-size: 36px;
 position: relative;
-
+color: white;
 }
 
 .img-main{
-width: 35vw;
+width: 75%;
 }
 
+.bg-roxo{
+  background-color: #6C63FF;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
 /* início CSS HUGO */
 
 .footer {
