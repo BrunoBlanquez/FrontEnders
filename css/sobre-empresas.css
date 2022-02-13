@@ -1,0 +1,38 @@
+.sec-1{
+    margin-top: 140px;
+    width: 20rem;
+    color: blue;
+}
+.jumbotron{
+    margin-top: 15rem;
+
+}
+.sec-2{
+    margin-top: 15rem;
+}
+.sec-3{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.sec-4{
+    display: flex;
+  
+}
+.sec-4-img{
+    max-width: 350%;
+    max-height: 500%;
+    margin-right: 10%;
+    
+}
+.sec-4-textos{
+    display: flex;
+    flex-direction: column;
+   max-width: 40%;
+   justify-content: space-between;
+
+}
+.assinar{
+    margin-top: 2rem;
+    margin-left: 45%;
+}
