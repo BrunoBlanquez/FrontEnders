@@ -8,6 +8,8 @@
   <title>FrontEnders</title>
   <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
   <script src="../js/jquery/jquery.min.js" defer></script>
   <script src="../js/bootstrap/bootstrap.min.js" defer></script>
   <script src="../js/verificaEmail.js" defer></script>
@@ -92,10 +94,13 @@
         </div>
         <label for="inputCEP">CEP</label>
         <div class="form-group buscaCep">
-          <input type="number" maxlength="6" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
+          <input type="text" maxlength="8" class="form-control" id="inputCEP" placeholder="xxxxxxxx"
+            pattern="([0-9]{8})">
           <button class="botaoBusca" type="button">Busca CEP</button>
         </div>
-
+        <div class="verificacaoCep">
+          <p class="verificacaoCepMsg msgDesativada">CEP informado é inválido!</p>
+        </div>
         <div class="form-group">
           <label for="inputAddress">Endereço</label>
           <input type="text" class="form-control inputAddress inputEnable" id="inputAddress" placeholder="Rua dos Bobos"
@@ -103,18 +108,18 @@
 
         </div>
         <div class="form-goupr col-md-2">
-          <label for="inputAddress2">Numero </label>
+          <label for="inputnumero">Numero </label>
           <input type="number" class="form-control inputEnable" id="inputnumero" placeholder="123" disabled>
         </div>
         <div class="form-group">
-          <label for="inputAddress2">Bairro</label>
+          <label for="inputbairro">Bairro</label>
           <input type="text" class="form-control inputEnable" id="inputbairro" placeholder="Jardim , Parque etc..."
             disabled>
         </div>
 
         <div class="form-group">
-          <label for="inputAddress2">Complemento</label>
-          <input type="number" class="form-control inputEnable" id="inputcomplemento" placeholder="Bloco , Apartamento"
+          <label for="inputcomplemento">Complemento</label>
+          <input type="text" class="form-control inputEnable" id="inputcomplemento" placeholder="Bloco , Apartamento"
             disabled>
         </div>
         <div class="form-row">

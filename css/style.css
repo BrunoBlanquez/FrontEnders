@@ -2,6 +2,7 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  font-family: 'Caudex', serif;
 }
 
 .header {
@@ -69,4 +70,3 @@ width: 75%;
   color: aliceblue;
   height: 5px;
 }
-
