@@ -50,6 +50,12 @@ width: 75%;
     flex: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .figma{
+    display: none;
+  }
+}
 /* início CSS HUGO */
 
 .footer {
