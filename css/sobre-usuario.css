@@ -1,7 +1,6 @@
 * {
   text-decoration: none;
   list-style: none;
-  font-family: 'Caudex', serif;
 }
 
 .primeiraDiv {
@@ -69,6 +68,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.tabelaPrecos {
+  margin-top: 30px;
 }
 
 .card {
