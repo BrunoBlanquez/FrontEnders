@@ -110,3 +110,28 @@
 .inputCEPSucesso {
   box-shadow: inset 0 0 7px green;
 }
+
+/* darkmode */
+[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+[data-theme="dark"] .bg-light{
+  background-color: #222 !important;
+  color: #eee;
+}
+[data-theme="dark"] .bg-white{
+  background-color: #111 !important;
+  color: #eee;
+}
+[data-theme="dark"] .btn-primary{
+ background-color: #eee;
+
+}
+
+.form-check {
+margin-top: 9px;
+}
+[data-theme="dark"] .dropdowm-item {
+  background-color: #222 !important;
+color: #222 !important ;}
