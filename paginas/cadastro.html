@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrontEnders</title>
   <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/geral.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
   <script src="../js/jquery/jquery.min.js" defer></script>
   <script src="../js/bootstrap/bootstrap.min.js" defer></script>
-  <script src="../js/script.js" defer></script>
+  <script src="../js/verificaEmail.js" defer></script>
+  <script src="../js/pegaCep.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +56,131 @@
     </nav>
   </header>
   <main>
-    <div class="main"></div>
+    <div class="main-cadastro">
+      <form>
+        <div class="form-row">
+          <div class="row">
+            <div class="col">
+              <label for="Name">Nome</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+            </div>
+            <div class="col">
+              <label for="Sobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="Sobrenome" placeholder="Sobrenome" required>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword">Confirmação de senha</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Confirmação de senha">
+          </div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputRG">RG</label>
+          <input type="text" class="form-control" id="inputRG" placeholder="xx.xxx.xxx-xx">
+        </div>
+        <label for="inputCEP">CEP</label>
+        <div class="form-group buscaCep">
+          <input type="text" maxlength="8" class="form-control" id="inputCEP" placeholder="xxxxxxxx"
+            pattern="([0-9]{8})">
+          <button class="botaoBusca" type="button">Busca CEP</button>
+        </div>
+        <div class="verificacaoCep">
+          <p class="verificacaoCepMsg msgDesativada">CEP informado é inválido!</p>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control inputAddress inputEnable" id="inputAddress" placeholder="Rua dos Bobos"
+            disabled>
+
+        </div>
+        <div class="form-goupr col-md-2">
+          <label for="inputnumero">Numero </label>
+          <input type="number" class="form-control inputEnable" id="inputnumero" placeholder="123" disabled>
+        </div>
+        <div class="form-group">
+          <label for="inputbairro">Bairro</label>
+          <input type="text" class="form-control inputEnable" id="inputbairro" placeholder="Jardim , Parque etc..."
+            disabled>
+        </div>
+
+        <div class="form-group">
+          <label for="inputcomplemento">Complemento</label>
+          <input type="text" class="form-control inputEnable" id="inputcomplemento" placeholder="Bloco , Apartamento"
+            disabled>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control inputEnable" id="inputCity"
+              placeholder="São paulo, Curitiba , Rio de janeiro" disabled>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control inputEnable" disabled>
+              <option selected>Escolher...</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Receber novidades por E-mail
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck2">
+            <label class="form-check-label" for="gridCheck2">
+              Li e concordo com os termos de uso
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnCadastro">Cadastrar</button>
+        <a href="login.html">Já tenho cadastro</a>
+      </form>
+    </div>
   </main>
   <footer>
     <div class="my-5 footerDiv">
@@ -85,6 +211,7 @@
         <div class="text-center text-white p-3">
           © 2022 Todos os direitos reservados
           <a class="text-white" href="https://mdbootstrap.com/"></a>
+
         </div>
         <!-- Copyright -->
       </footer>

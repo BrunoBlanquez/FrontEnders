@@ -1,0 +1,112 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+    
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    margin-left: 25px;
+  }
+  
+  .menu {
+    margin-right: 75px;
+  }
+  
+  .menu li {
+    padding-left: 25px;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0, .7);
+    position: relative;
+  }
+  
+  .iconsFooter a {
+    margin-right: 35px;
+    color: aliceblue;
+    height: 5px;
+  }
+  
+  .main-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 70px ;
+    align-items: center;
+   
+   
+  }
+  .col{
+    gap: 50px;
+  }
+  form {
+    gap: 50px ;
+    width:  50%;
+  }
+  
+  
+#inputRG{
+  width: 200px;
+}
+
+#inputCEP {
+  width: 120px;
+}
+
+.buscaCep {
+  display: flex;
+}
+
+.botaoBusca {
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 110px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid rgb(83, 109, 254);
+  color: #536DFE;
+  background-color: rgb(255, 255, 255);
+}
+
+.botaoBusca:hover {
+  background-color: #536DFE;
+  color: #ffffff;
+}
+
+.btn {
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 120px;
+  height: 44px;
+  border-radius: 20px;
+  border: 2px solid rgb(83, 109, 254);
+  color: #536DFE;
+  background-color: rgb(255, 255, 255);
+}
+
+#inputCEP {
+  border-radius: 5px 0 0 5px;
+}
+
+.msgDesativada {
+  display: none;
+}
+
+.verificacaoCepMsg {
+  color: red;
+}
+
+.inputCEPErro {
+  box-shadow: inset 0 0 7px red;
+}
+
+.inputCEPSucesso {
+  box-shadow: inset 0 0 7px green;
+}
