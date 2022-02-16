@@ -1,6 +1,5 @@
 let inputEmail = $("#inputEmail4");
 let botaoCadastro = $("#btnCadastro");
-console.log(botaoCadastro)
 
 botaoCadastro.on('click', function(event){
   event.preventDefault();
