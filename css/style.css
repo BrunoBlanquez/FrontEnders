@@ -22,6 +22,10 @@
   padding-left: 25px;
 }
 
+.bg-light {
+  background-color: #536DFE;
+}
+
 /* início CSS HUGO */
 
 .botao-conteudo-principal {
@@ -46,6 +50,11 @@ width: 75%;
 .flex-equal > * {
   flex: 1;
 }
+
+.footerDiv {
+  margin-bottom: 0 !important;
+}
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
@@ -70,6 +79,11 @@ width: 75%;
   color: aliceblue;
   height: 5px;
 }
+
+.iconeRedes {
+  cursor: pointer;
+}
+
 /* darkmode */
 [data-theme="dark"] {
   background-color: #111 !important;
@@ -124,3 +138,8 @@ width: 75%;
 .form-check {
 margin-top: 9px;
 }
+
+.bg-light, .navbar-nav ul {
+  border-bottom: 3px solid #536DFE !important;
+  box-shadow: 0 3px 5px #536DFE !important;
+} 
