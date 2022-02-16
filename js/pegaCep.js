@@ -16,7 +16,7 @@ let msgErro = $('.verificacaoCepMsg')
 botao.on('click', function(event) {
   event.preventDefault();
   pegaCEP()
-  campoInputEndereco.removeAttr('disabled')
+
   })
 
 // Função que pega o CEP e busca os valores na API, preenchendo os campos o formulário
@@ -31,6 +31,9 @@ function pegaCEP() {
       bairroCep.val(cep.responseJSON.bairro)
       cidadeCep.val(cep.responseJSON.localidade)
 
+      // Vai remover o disabled dos inputs
+      campoInputEndereco.removeAttr('disabled')
+
       // Classes que serão modificadas quando der sucesso
       msgErro.addClass('msgDesativada')
       inputCep.addClass('inputCEPSucesso')
@@ -43,6 +46,7 @@ function pegaCEP() {
         msgErro.removeClass('msgDesativada')
         inputCep.removeClass('inputCEPSucesso')
         inputCep.addClass('inputCEPErro')
+        campoInputEndereco.attr('disabled', true)
       }
        if (jqXHR.status === 0) {
             modificaClasses() 

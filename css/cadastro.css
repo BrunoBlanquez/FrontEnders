@@ -36,22 +36,34 @@
   
   .main-cadastro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding-top: 70px ;
     align-items: center;
-   
-   
   }
-  .col{
-    gap: 50px;
-  }
-  form {
-    gap: 50px ;
-    width:  50%;
+
+  .form-row > div, .formCadastro > div {
+    margin-top: 3% !important;
   }
   
-  
+.btn2 {
+  font-family: 'Caudex', serif;
+  font-size: 1.2rem;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #536DFE;
+  margin: 5% 5% 0 0 ;
+}
+
+.btn2:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
 #inputRG{
   width: 200px;
 }

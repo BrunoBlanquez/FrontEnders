@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrontEnders</title>
   <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/geral.css">
   <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
   <script src="../js/jquery/jquery.min.js" defer></script>
   <script src="../js/bootstrap/bootstrap.min.js" defer></script>
@@ -50,11 +49,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="cadastro.html">Cadastro</a>
               </li>
-              <li>   <div class="form-check form-switch">
-                <input type="checkbox" class="form-check-input" id="darkSwitch">
-                <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-              </div>
-          </li>
+              <li>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="darkSwitch">
+                  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -63,13 +63,14 @@
   </header>
   <main>
     <div class="main-login container">
+      <h4>Informe o e-mail de cadastro</h4>
       <form>
         <div class="form-group">
           <label for="inputEmail4">Email</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
           <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
         </div>
-        <button type="submit" class="btn btn-primary" id="#btnCadastro">Enviar</button>
+        <button type="submit" class="btn2" id="#btnCadastro">Enviar</button>
       </form>
     </div>
   </main>

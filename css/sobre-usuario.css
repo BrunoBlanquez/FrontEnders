@@ -38,6 +38,10 @@
   padding: 25px;
 }
 
+.sec2-img {
+  margin-right: 10%;
+}
+
 .listaBeneficios > li {
   list-style: circle;
 }
@@ -51,7 +55,7 @@
 }
 
 .sec3Img {
-  margin: 35px;
+  margin: 5%;
 }
 
 .sec3Textos p {
@@ -95,13 +99,13 @@
   width: 180px;
   height: 64px;
   border-radius: 20px;
-  border: 2px solid rgb(83, 109, 254);
-  color: #536DFE;
-  background-color: rgb(255, 255, 255);
+  border: none;
+  color: #ffffff;
+  background-color: #536DFE;
 }
 
-.btn:hover, .botaoAdquirir:hover {
-  color: #536DFE;
+.btn:hover, .botaoAdquirir:hover, .botaoChamada:hover {
+  color: #ffffff;
   transform: scale(1.1);
   transition: all .3s ease-in-out;
 }

@@ -33,11 +33,22 @@
     color: aliceblue;
     height: 5px;
   }
+
   .main-login {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 100px;
     align-items: center;
-      padding: 70px;
+    padding: 70px;
   }
+
+  .main-login > h4 {
+    margin: 35px 0;
+  }
+
+@media (max-width: 700px) {
+  .btnLogin {
+    display: flex;
+    flex-direction: column;
+  }
+}
